@@ -13,7 +13,7 @@ const routes = {
     '/carte': Carte,
     '/equipement': Equipement,
     '/equipementSearch': EquipementSearch,
-    '/serie': Serie,
+    '/serie/:id': Serie,
     '/serieSearch': SerieSearch,
 };
 
