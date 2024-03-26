@@ -1,10 +1,32 @@
 #logo {
-    width: 20rem;
-    height: 15rem;
+    width: 30rem;
+    height: 18rem;
     margin-top: 3rem;
 }
 
 .flex {
     display: flex;
     margin-top: 2rem;
+}
+
+span {
+    text-decoration: underline;
+}
+
+#info {
+    margin-left: 3rem;
+}
+
+#info p {
+    font-size: 2rem;
+}
+
+#info h1 {
+    font-size: 5rem;
+}
+
+#symbole {
+    margin-left: 1rem;
+    width: 6rem;
+    height: 3rem;
 }

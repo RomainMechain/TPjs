@@ -14,14 +14,14 @@ export default class Serie {
                 <di>
                     <img src="${serie.images.logo}" alt="${serie.name}"/ id='logo'>
                 </di>
-                <div>
+                <div id='info'>
                     <h1>${serie.name}</h1>
-                    <p><span>De la série : </span>${serie.series}</p>
-                    <p><span>Nombre de cartes : </span>${serie.total}</p>
-                    <p><span>Sortie le : </span>${serie.releaseDate}</p>
+                    <p><span>De la série :</span>  ${serie.series}</p>
+                    <p><span>Nombre de cartes :</span>  ${serie.total}</p>
+                    <p><span>Sortie le :</span>  ${serie.releaseDate}</p>
                     <div class='flex'>
-                    <p><span>Symbole : </span></p>
-                    <img src="${serie.images.symbol}" alt="${serie.name}"/>
+                    <p><span>Symbole :</span></p>
+                    <img src="${serie.images.symbol}" alt="${serie.name}" id='symbole'/>
                     </div>
                 </div>
             </section>
