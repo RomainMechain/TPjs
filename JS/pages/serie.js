@@ -1,8 +1,7 @@
 import CarteProvider from "../services/CarteProvider.js";
 
 export default class Serie {
-
-    async render () {
+    static async render () {
         let articles = await CarteProvider.fetchCartes();
         let view =  /*html*/`
             <h2>Tous les cartes</h2>

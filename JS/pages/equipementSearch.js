@@ -1,6 +1,6 @@
 export default class EquipementSearch {
 
-    async render () {
+    static async render () {
         let view =  `
             <h2>Error 404</h2>
         `;

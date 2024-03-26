@@ -1,0 +1,26 @@
+.card{
+    height: 30vh;
+    
+}
+.row{
+    height: 50vh;
+}
+.col{
+    height: 50vh;
+}
+.bd-placeholder-img {
+
+    
+    max-width: 30em;
+    max-height: 30em;
+    object-fit: contain; /* This ensures that the image scales while maintaining its aspect ratio */
+}
+.card-body{
+    height: 100vh;
+}
+.card-header{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
