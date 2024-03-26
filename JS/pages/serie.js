@@ -7,7 +7,8 @@ export default class Serie {
     async render () {
         let request = Utiles.parseRequestURL();
         let serie = await SerieProvider.getseries(request.id);
-        let cartes = await CarteProvider.fetchCartes();
+        let cartesSeries = await CarteProvider.getCartesByidSerie(request.id);
+        let cartes = await CarteProvider.filterByMesCartes(cartesSeries);
         let view =  /*html*/`
             <link rel="stylesheet" href="../../css/serie.css">
             <section class='flex'>
