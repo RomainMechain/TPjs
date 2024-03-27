@@ -31,19 +31,11 @@ export default class Serie {
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 ${ cartes.map(cartes => 
                     /*html*/`
-                    <div class="col">
-                    <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="${cartes.images.small}" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">${cartes.title}</text></svg>
-                        <div class="card-body">
-                            <p class="card-text">${cartes.text ? cartes.text.slice(0,100) : ''}</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                <a href="#/carte/${cartes.id}" class="btn btn-sm btn-outline-secondary">Voir ${cartes.name}</a>
-                                </div>
-                                <small class="text-body-secondary">${cartes.id}</small>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="gallery">
+                        <a href="#/carte/${cartes.id}">
+                            <img src="${cartes.images.large}" alt="${cartes.name}" class='uneCarte'>
+                        </a>
+                        <div class="desc">${cartes.name}</div>
                     </div>
                     `
                     ).join('\n ')

@@ -32,3 +32,11 @@ span {
     max-height: 4rem;
     object-fit: contain;
 }
+
+.uneCarte {
+    height: 3px;
+}
+
+.desc {
+    color: brown;
+}
