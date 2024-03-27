@@ -29,6 +29,9 @@ const router = async () => {
     let page = routes[parsedURL]  
     console.log(page)
     content.innerHTML = await page.render();
+    if (page.afterRender) {
+        page.afterRender();
+    }
 }
 
 //localStorage.clear();

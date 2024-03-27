@@ -69,6 +69,7 @@ export default class CarteProvider {
 
     static getCartesFavories = async () => {
         let favories = JSON.parse(localStorage.getItem('favories'));
+        console.log("Les favories du provider :", favories);
         let cartes = await this.fetchCartes();
         let res = [];
         for(let i = 0; i < cartes.length; i++) {
