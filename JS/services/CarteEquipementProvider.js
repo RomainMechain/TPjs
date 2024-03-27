@@ -34,4 +34,11 @@ export default class CarteEquipementProvider {
            console.log('Error getting documents', err)
        }
     }
+    static getCarteEquipementByItems = async (items) => {
+        let cartesEquipement = await this.fetchCarteEquipement();
+        return cartesEquipement.filter(carteEquipement => items.includes(carteEquipement.id));
+    }
+
+
+    
 }

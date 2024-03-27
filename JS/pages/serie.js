@@ -4,7 +4,7 @@ import SerieProvider from "../services/SerieProvider.js";
 
 export default class Serie {
 
-    async render () {
+    static async render () {
         let request = Utiles.parseRequestURL();
         let serie = await SerieProvider.getseries(request.id);
         let cartesSeries = await CarteProvider.getCartesByidSerie(request.id);

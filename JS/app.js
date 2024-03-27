@@ -11,7 +11,7 @@ import CarteProvider from "./services/CarteProvider.js"
 
 const routes = {
     '/': Home,
-    '/carte': Carte,
+    '/carte/:id': Carte,
     '/equipement/:id': Equipement,
     '/equipementsearch': EquipementSearch,
     '/serie/:id': Serie,
