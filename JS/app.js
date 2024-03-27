@@ -30,7 +30,7 @@ const router = async () => {
     console.log(page)
     content.innerHTML = await page.render();
     if (page.afterRender) {
-        page.afterRender();
+        await page.afterRender();
     }
 }
 

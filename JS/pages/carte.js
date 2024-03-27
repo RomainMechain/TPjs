@@ -57,7 +57,7 @@ export default class Carte {
             return view
         }
 
-        static afterRender() {
+        static async afterRender() {
             let request = Utiles.parseRequestURL();
             let favoriteButton = document.querySelector('.bouttonFav');
         
@@ -94,6 +94,7 @@ export default class Carte {
             });
 
 
+            let cartes = await CarteProvider.getCartes(request.id);
             let niveauButton = document.querySelector('.bouttonNiveau');
             niveauButton.addEventListener('click', function() {
                 let mesCartes = JSON.parse(localStorage.getItem('mesCartes'));
@@ -103,6 +104,15 @@ export default class Carte {
                         mesCartes[i][1]++;
                         console.log("Niveau de la carte :", mesCartes[i][1]);
                         document.getElementById('level').textContent = mesCartes[i][1];
+                        if (mesCartes[i][1] >= cartes.level) {
+                            console.log("Evolution de la carte en ", cartes.evolvesTo[0]);
+                            //Ajoute la carte évoluée à mesCartes avec le niveau de la carte actuelle
+                            mesCartes.push([cartes.evolvesTo[0], mesCartes[i][1]]);
+                            //enlève la carte de mesCartes
+                            mesCartes.splice(i, 1);
+                            //redirimger vers la page de la nouvelle carte
+                            location.href = `#/carte/${cartes.evolvesTo[0]}`;
+                        }
                     }
                 }
                 localStorage.setItem('mesCartes', JSON.stringify(mesCartes));
