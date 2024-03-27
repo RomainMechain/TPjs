@@ -9,6 +9,13 @@ export default class Carte {
             let request = Utiles.parseRequestURL();
             let cartes = await CarteProvider.getCartes(request.id);
             let objet = await CarteEquipementProvider.getCarteEquipementByItems(cartes.items);
+            let mesCartes = JSON.parse(localStorage.getItem('mesCartes'));
+            let currentLevel = 0;
+            for (let i = 0; i < mesCartes.length; i++) {
+                if (mesCartes[i][0] == request.id) {
+                    currentLevel = mesCartes[i][1];
+                }
+            }
 
             let view =  /*html*/`
                 <link rel="stylesheet" href="../../css/carte.css">
@@ -20,15 +27,16 @@ export default class Carte {
                         <div class='flex'>
                         <h1>${cartes.name}</h1>
                         </div>
-                        <p id='test'><span>De type :</span>  ${cartes.subtypes}</p>
-                        <p><span>Numeros de carte :</span>  ${cartes.number}</p>
-                        <p><span>evolue en :</span>  ${cartes.evolvesTo}</p>
-                        <p><span>Artiste :</span>  ${cartes.artist}</p>
-                        <p><span>Rareté :</span>  ${cartes.rarity}</p>
+                        <p id='test'><span class='label'>De type :</span>  ${cartes.subtypes}</p>
+                        <p><span class='label'>Numeros de carte :</span>  ${cartes.number}</p>
+                        <p><span class='label'>Artiste :</span>  ${cartes.artist}</p>
+                        <p><span class='label'>Rareté :</span>  ${cartes.rarity}</p>
+                        <p><span>Niveau actuel :</span>  <span id='level'>${currentLevel}</span></p>
                         
                     </div>
                 </section>
                 <button id="${cartes.id}" class='bouttonFav'>Ajouter aux favoris</button>
+                <button id="${cartes.id}" class='bouttonNiveau'>Monter de niveau</button>
                 <section>
                 <h2>Tous les objets</h2>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -52,8 +60,6 @@ export default class Carte {
         static afterRender() {
             let request = Utiles.parseRequestURL();
             let favoriteButton = document.querySelector('.bouttonFav');
-            let test = document.querySelector('#test');
-            console.log("Le test :", test);
         
             let favorites = localStorage.getItem('favories');
             if (favorites) {
@@ -85,6 +91,21 @@ export default class Carte {
                 }
                 console.log("Les favoris :", favorites);
                 localStorage.setItem('favories', JSON.stringify(favorites));
+            });
+
+
+            let niveauButton = document.querySelector('.bouttonNiveau');
+            niveauButton.addEventListener('click', function() {
+                let mesCartes = JSON.parse(localStorage.getItem('mesCartes'));
+                console.log("Mes cartes :", mesCartes);
+                for (let i = 0; i < mesCartes.length; i++) {
+                    if (mesCartes[i][0] == request.id) {
+                        mesCartes[i][1]++;
+                        console.log("Niveau de la carte :", mesCartes[i][1]);
+                        document.getElementById('level').textContent = mesCartes[i][1];
+                    }
+                }
+                localStorage.setItem('mesCartes', JSON.stringify(mesCartes));
             });
         }
     }

@@ -51,7 +51,7 @@ if(localStorage.getItem('mesCartes') !== null) {
     let mesCartes = [];
     let cartesBasic = await CarteProvider.getCartesBasic();
     for(let i = 0; i < cartesBasic.length; i++) {
-        mesCartes.push(cartesBasic[i].id);
+        mesCartes.push([cartesBasic[i].id, 0]);
     }
     localStorage.setItem('mesCartes', JSON.stringify(mesCartes));
 }
