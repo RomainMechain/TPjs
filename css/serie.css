@@ -1,7 +1,8 @@
 #logo {
-    width: 30rem;
-    height: 18rem;
+    max-width: 35rem;
+    max-height: 18rem;
     margin-top: 3rem;
+    object-fit: contain;
 }
 
 .flex {
@@ -27,6 +28,7 @@ span {
 
 #symbole {
     margin-left: 1rem;
-    width: 6rem;
-    height: 3rem;
+    max-width: 6rem;
+    max-height: 4rem;
+    object-fit: contain;
 }
