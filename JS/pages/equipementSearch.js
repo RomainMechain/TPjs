@@ -11,8 +11,8 @@ export default class EquipementSearch {
                 ${ equipement.map(equipement => 
                     /*html*/`
                     <div class="gallery">
-                        <a target="_blank" href="#/equipement/${equipement.id}">
-                            <img src="${equipement.images.large}" alt="${equipement.name}" width="600" height="400">
+                        <a href="#/equipement/${equipement.id}">
+                            <img class="equipement"src="${equipement.images.large}" alt="${equipement.name}" >
                         </a>
                         <div class="desc">${equipement.name}</div>
                     </div>
