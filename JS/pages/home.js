@@ -1,5 +1,5 @@
 export default class Home {
-    async render () {
+    static async render () {
         let view =  `
             <h2>Page d'accueil</h2>
         `;
