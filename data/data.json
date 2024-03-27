@@ -99,6 +99,129 @@
               "small": "https://images.pokemontcg.io/neo3/65.png",
               "large": "https://images.pokemontcg.io/neo3/65_hires.png"
             }
+          },
+          {
+            "id": "neo1-65",
+            "idSerie" : "neo1",
+            "name": "Mareep",
+            "supertype": "Pokémon",
+            "subtypes": [
+              "Basic"
+            ],
+            "level": "12",
+            "hp": "40",
+            "types": [
+              "Lightning"
+            ],
+            "evolvesTo": [
+              "Flaaffy"
+            ],
+            "weaknesses": [
+              {
+                "type": "Fighting",
+                "value": "×2"
+              }
+            ],
+            "retreatCost": [
+              "Colorless"
+            ],
+            "convertedRetreatCost": 1,
+            "number": "65",
+            "artist": "Ken Sugimori",
+            "rarity": "Common",
+            "flavorText": "If static electricity builds in its body, its fleece doubles in volume. Touching it will shock you.",
+            "nationalPokedexNumbers": [
+              179
+            ],
+            "legalities": {
+              "unlimited": "Legal"
+            },
+            "images": {
+              "small": "https://images.pokemontcg.io/neo1/65.png",
+              "large": "https://images.pokemontcg.io/neo1/65_hires.png"
+            }
+          },
+          {
+            "id": "neo1-34",
+            "idSerie" : "neo1",
+            "name": "Flaaffy",
+            "supertype": "Pokémon",
+            "subtypes": [
+              "Stage 1"
+            ],
+            "level": "26",
+            "hp": "60",
+            "types": [
+              "Lightning"
+            ],
+            "evolvesFrom": "Mareep",
+            "evolvesTo": [
+              "Ampharos"
+            ],
+            "weaknesses": [
+              {
+                "type": "Fighting",
+                "value": "×2"
+              }
+            ],
+            "retreatCost": [
+              "Colorless"
+            ],
+            "convertedRetreatCost": 1,
+            "number": "34",
+            "artist": "Ken Sugimori",
+            "rarity": "Uncommon",
+            "flavorText": "As a result of storing too much electricity, it developed patches where even downy wool won't grow.",
+            "nationalPokedexNumbers": [
+              180
+            ],
+            "legalities": {
+              "unlimited": "Legal"
+            },
+            "images": {
+              "small": "https://images.pokemontcg.io/neo1/34.png",
+              "large": "https://images.pokemontcg.io/neo1/34_hires.png"
+            }
+          },
+          {
+            "id": "neo1-1",
+            "idSerie" : "neo1",
+            "name": "Ampharos",
+            "supertype": "Pokémon",
+            "subtypes": [
+              "Stage 2"
+            ],
+            "level": "40",
+            "hp": "80",
+            "types": [
+              "Lightning"
+            ],
+            "evolvesFrom": "Flaaffy",
+            "weaknesses": [
+              {
+                "type": "Fighting",
+                "value": "×2"
+              }
+            ],
+            "retreatCost": [
+              "Colorless",
+              "Colorless"
+            ],
+            "convertedRetreatCost": 2,
+            "number": "1",
+            "artist": "Ken Sugimori",
+            "rarity": "Rare Holo",
+            "flavorText": "The tail's tip shines brightly and can be seen from far away. It acts as a beacon for lost people.",
+            "nationalPokedexNumbers": [
+              181
+            ],
+            "legalities": {
+              "unlimited": "Legal"
+            },
+            "images": {
+              "small": "https://images.pokemontcg.io/neo1/1.png",
+              "large": "https://images.pokemontcg.io/neo1/1_hires.png"
+            }
           }
     ],
     "series" : [

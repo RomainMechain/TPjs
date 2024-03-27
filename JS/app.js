@@ -7,6 +7,7 @@ import SerieSearch from "./pages/seriesSearch.js"
 import Error404 from "./pages/error404.js"
 
 import Utiles from "./services/utiles.js"
+import CarteProvider from "./services/CarteProvider.js"
 
 const routes = {
     '/': Home,
@@ -28,6 +29,26 @@ const router = async () => {
     let page = routes[parsedURL]  
     console.log(page)
     content.innerHTML = await page.render();
+}
+
+//localStorage.clear();
+
+
+if(localStorage.getItem('favories') !== null) {
+    console.log(localStorage.getItem('favories'));
+} else {
+    localStorage.setItem('favories', JSON.stringify([]));
+}
+
+if(localStorage.getItem('mesCartes') !== null) {
+    console.log(localStorage.getItem('mesCartes'));
+} else {
+    let mesCartes = [];
+    let cartesBasic = await CarteProvider.getCartesBasic();
+    for(let i = 0; i < cartesBasic.length; i++) {
+        mesCartes.push(cartesBasic[i].id);
+    }
+    localStorage.setItem('mesCartes', JSON.stringify(mesCartes));
 }
 
 window.addEventListener('load', router);
