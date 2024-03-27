@@ -55,5 +55,17 @@ export default class CarteProvider {
         }
         return res;
     }
+
+    static getCartesFavories = async () => {
+        let favories = JSON.parse(localStorage.getItem('favories'));
+        let cartes = await this.fetchCartes();
+        let res = [];
+        for(let i = 0; i < cartes.length; i++) {
+            if(favories.includes(cartes[i].id)) {
+                res.push(cartes[i]);
+            }
+        }
+        return res;
+    }
 }
 
