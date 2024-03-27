@@ -11,6 +11,7 @@ export default class Equipement {
 
         let view =  /*html*/`
             <link rel="stylesheet" href="../../css/carte.css">
+            <script src="../script/searchBar.js"></script>
             <section class='flex'>
                 <di>
                     <img classe="carte" src="${objet.images.large}" alt="${objet.name}"/ id='logo'>
