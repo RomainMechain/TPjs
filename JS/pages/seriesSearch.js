@@ -5,7 +5,7 @@ export default class SerieSearch {
         let seriesList = await SerieProvider.fetchSeries();
         let view =  /*html*/`
             <link rel="stylesheet" href="./css/seriesSearch.css">
-            <h2>Tous les cartes</h2>
+            <h2>Toutes les series</h2>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 ${ seriesList.map(series => 
                     /*html*/`

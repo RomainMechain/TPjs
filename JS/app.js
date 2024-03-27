@@ -11,7 +11,7 @@ import Utiles from "./services/utiles.js"
 const routes = {
     '/': Home,
     '/carte': Carte,
-    '/equipement': Equipement,
+    '/equipement/:id': Equipement,
     '/equipementsearch': EquipementSearch,
     '/serie/:id': Serie,
     '/seriesearch': SerieSearch,
