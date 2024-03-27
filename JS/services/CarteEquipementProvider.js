@@ -36,6 +36,9 @@ export default class CarteEquipementProvider {
     }
     static getCarteEquipementByItems = async (items) => {
         let cartesEquipement = await this.fetchCarteEquipement();
+        if (items === undefined) {
+            return [];
+        }
         return cartesEquipement.filter(carteEquipement => items.includes(carteEquipement.id));
     }
 

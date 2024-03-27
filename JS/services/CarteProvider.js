@@ -45,6 +45,17 @@ export default class CarteProvider {
         return cartes.filter(carte => carte.subtypes[0] == 'Basic')
     }
 
+    static getCarteByItems = async (id) => {
+        let cartes = await this.fetchCartes();
+        let res = [];
+        for(let i = 0; i < cartes.length; i++) {
+            if(cartes[i].items && cartes[i].items.includes(id)) {
+                res.push(cartes[i]);
+            }
+        }
+        return res;
+    }
+
     static filterByMesCartes = async (mesCartes) => {
         let mesCartesJSON = JSON.parse(localStorage.getItem('mesCartes'));
         let res = [];
