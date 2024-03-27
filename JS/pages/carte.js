@@ -21,7 +21,7 @@ export default class Carte {
                         <p><span>De type :</span>  ${cartes.subtypes}</p>
                         <p><span>Numeros de carte :</span>  ${cartes.number}</p>
                         <p><span>evolue en :</span>  ${cartes.evolvesTo}</p>
-                        <p><span>Artiste :</span>  ${cartes.artiste}</p>
+                        <p><span>Artiste :</span>  ${cartes.artist}</p>
                         <p><span>Rareté :</span>  ${cartes.rarity}</p>
 
                         
@@ -33,7 +33,7 @@ export default class Carte {
                     ${ objet.map(objet => 
                         /*html*/`
                         <div class="gallery">
-                            <a href="#/carte/${objet.id}">
+                            <a href="#/equipement/${objet.id}">
                                 <img src="${objet.images.large}" alt="${objet.name}" class='uneCarte'>
                             </a>
                             <div class="desc">${objet.name}</div>
