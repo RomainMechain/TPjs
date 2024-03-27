@@ -28,6 +28,7 @@ export default class Serie {
             </section>
             <section>
             <h2>Tous les cartes</h2>
+            <input class="form-control me-sm-2" type="search" placeholder="recherche par nom de pokemon, type ou par artiste" id="searchBar" oninput="searchbarcarte()">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 ${ cartes.map(cartes => 
                     /*html*/`
@@ -36,6 +37,9 @@ export default class Serie {
                             <img src="${cartes.images.large}" alt="${cartes.name}" class='uneCarte'>
                         </a>
                         <div class="desc">${cartes.name}</div>
+                        <div class="type" style="display: none;">${cartes.subtypes}</div>
+                        <div class="artiste" style="display: none;">${cartes.artist}</div>
+                        
                     </div>
                     `
                     ).join('\n ')

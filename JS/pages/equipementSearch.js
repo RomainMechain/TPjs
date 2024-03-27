@@ -6,10 +6,10 @@ export default class EquipementSearch {
         let equipement = await CarteEquipementProvider.fetchCarteEquipement();
         let view =  /*html*/`
             <link rel="stylesheet" href="./css/equipementSearch.css">
+            <script src="./JS/searchBar.js"></script>
             <h2>Toutes les cartes</h2>
             <form class="d-flex">
-            <input class="form-control me-sm-2" type="search" placeholder="Search" id="searchBar" oniput='search()'>
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit" id="searchBar">Search</button>
+            <input class="form-control me-sm-2" type="search" placeholder="recherche par nom d'équipement ou par artiste" id="searchBar" oninput="searchbar()">
             </form>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 ${ equipement.map(equipement => 
@@ -19,6 +19,8 @@ export default class EquipementSearch {
                             <img class="equipement"src="${equipement.images.large}" alt="${equipement.name}" >
                         </a>
                         <div class="desc">${equipement.name}</div>
+                        <div class="artiste" style="display: none;">${equipement.artist}</div>
+
                     </div>
                     `
                     ).join('\n ')

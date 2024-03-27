@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <script type="module" src="/JS/app.js"></script>
 
+    
 </head>
 <body>
     <header>
@@ -38,4 +39,56 @@
         </div>
     
     </main>
+    <script>
+        // Définir la fonction searchbar dans le contexte global
+        function searchbar() {
+            const searchBar = document.getElementById('searchBar');
+            const listItems = document.querySelectorAll('.gallery');
+            const entrée = searchBar.value.toLowerCase();
+
+            for (let i = 0; i < listItems.length; i++) {
+                const texte = listItems[i].querySelector('.desc').textContent.toLowerCase();
+                const artiste = listItems[i].querySelector('.artiste').textContent.toLowerCase();
+                
+                if (texte.includes(entrée) || artiste.includes(entrée)) {
+                    listItems[i].style.display = 'block';
+                } else {
+                    listItems[i].style.display = 'none';
+                }
+            }
+        }
+        function searchbarcarte() {
+            const searchBar = document.getElementById('searchBar');
+            const listItems = document.querySelectorAll('.gallery');
+            const entrée = searchBar.value.toLowerCase();
+
+            for (let i = 0; i < listItems.length; i++) {
+                const texte = listItems[i].querySelector('.desc').textContent.toLowerCase();
+                const type = listItems[i].querySelector('.type').textContent.toLowerCase();
+                const artiste = listItems[i].querySelector('.artiste').textContent.toLowerCase();
+                if (texte.includes(entrée)||type.includes(entrée) || artiste.includes(entrée)) {
+                    listItems[i].style.display = 'block';
+                } else {
+                    listItems[i].style.display = 'none';
+                }
+                i
+            }
+        }
+
+        // Écouter l'événement DOMContentLoaded pour appeler la fonction une fois que le DOM est chargé
+        document.addEventListener("DOMContentLoaded", function() {
+            // Ajouter un écouteur d'événement pour l'entrée dans la barre de recherche
+            const searchBar = document.getElementById('searchBar');
+            searchBar.addEventListener('input', searchbar);
+        });
+
+        // Écouter l'événement DOMContentLoaded pour appeler la fonction une fois que le DOM est chargé
+        document.addEventListener("DOMContentLoaded", function() {
+            // Ajouter un écouteur d'événement pour l'entrée dans la barre de recherche
+            const searchBar = document.getElementById('searchBar');
+            searchBar.addEventListener('input', searchbar);
+        });
+    </script>
+    
+
 </body>
