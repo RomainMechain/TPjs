@@ -37,7 +37,7 @@ export default class Serie {
                             <img src="${cartes.images.large}" alt="${cartes.name}" class='uneCarte'>
                         </a>
                         <div class="desc">${cartes.name}</div>
-                        <div class="type" style="display: none;">${cartes.subtypes}</div>
+                        <div class="type" style="display: none;">${cartes.types}</div>
                         <div class="artiste" style="display: none;">${cartes.artist}</div>
                         
                     </div>

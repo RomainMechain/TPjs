@@ -18,7 +18,7 @@ export default class Carte {
                     </di>
                     <div id='info'>
                         <h1>${cartes.name}</h1>
-                        <p><span>De type :</span>  ${cartes.subtypes}</p>
+                        <p><span>De type :</span>  ${cartes.types}</p>
                         <p><span>Numeros de carte :</span>  ${cartes.number}</p>
                         <p><span>evolue en :</span>  ${cartes.evolvesTo}</p>
                         <p><span>Artiste :</span>  ${cartes.artist}</p>

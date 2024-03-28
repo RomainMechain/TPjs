@@ -7,12 +7,14 @@
     <title>PokéExplorer</title>
     <link href="https://bootswatch.com/5/lumen/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
+    <script type="module" src="./JS/searchBar.js"></script>
     <script type="module" src="/JS/app.js"></script>
 
     
 </head>
 <body>
     <header>
+
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
                 <a href="#/"><img src="./image/logo.jpg" alt="" class="image"></a>
@@ -39,14 +41,34 @@
         </div>
     
     </main>
-    <script>
-        // Définir la fonction searchbar dans le contexte global
+    
+        <!-- // import CarteEquipementProvider from "./JS/services/CarteEquipementProvider.js";
+        // // function searchbar() {
+        // //     const searchBar = document.getElementById('searchBar');
+        // //     const listItems = document.querySelectorAll('.gallery');
+        // //     console.log(listItems)
+        // //     const entrée = searchBar.value.toLowerCase();
+
+        // //     for (let i = 0; i < listItems.length; i++) {
+        // //         const texte = listItems[i].querySelector('.desc').textContent.toLowerCase();
+        // //         const artiste = listItems[i].querySelector('.artiste').textContent.toLowerCase();
+                
+        // //         if (texte.includes(entrée) || artiste.includes(entrée)) {
+        // //             listItems[i].style.display = 'block';
+        // //         } else {
+        // //             listItems[i].style.display = 'none';
+        // //         }
+        // //     }
+        // // } 
+    
         function searchbar() {
             const searchBar = document.getElementById('searchBar');
             const listItems = document.querySelectorAll('.gallery');
             const entrée = searchBar.value.toLowerCase();
+            const equipement= carteEquipement.fetchCarteEquipement();
+            listItems.empty();
 
-            for (let i = 0; i < listItems.length; i++) {
+            for (let i = 0; i < equipement.length; i++) {
                 const texte = listItems[i].querySelector('.desc').textContent.toLowerCase();
                 const artiste = listItems[i].querySelector('.artiste').textContent.toLowerCase();
                 
@@ -56,7 +78,8 @@
                     listItems[i].style.display = 'none';
                 }
             }
-        }
+        } -->
+        <script>
         function searchbarcarte() {
             const searchBar = document.getElementById('searchBar');
             const listItems = document.querySelectorAll('.gallery');
@@ -71,11 +94,9 @@
                 } else {
                     listItems[i].style.display = 'none';
                 }
-                i
+                
             }
-        }
-
-        
+        }         
     </script>
     
 
