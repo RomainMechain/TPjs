@@ -80,23 +80,7 @@
             }
         } -->
         <script>
-        function searchbarcarte() {
-            const searchBar = document.getElementById('searchBar');
-            const listItems = document.querySelectorAll('.gallery');
-            const entrée = searchBar.value.toLowerCase();
-
-            for (let i = 0; i < listItems.length; i++) {
-                const texte = listItems[i].querySelector('.desc').textContent.toLowerCase();
-                const type = listItems[i].querySelector('.type').textContent.toLowerCase();
-                const artiste = listItems[i].querySelector('.artiste').textContent.toLowerCase();
-                if (texte.includes(entrée)||type.includes(entrée) || artiste.includes(entrée)) {
-                    listItems[i].style.display = 'block';
-                } else {
-                    listItems[i].style.display = 'none';
-                }
-                
-            }
-        }         
+                 
     </script>
     
 

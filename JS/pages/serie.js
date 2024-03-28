@@ -77,20 +77,31 @@ export default class Serie {
             li.appendChild(a);
             pagination.appendChild(li);
     
-
             a.addEventListener('click', async (e) => {
                 e.preventDefault(); 
                 let pageNumber = parseInt(e.target.textContent);
                 let paginatedCartes = await Pagination.paginCartes(cartes, pageNumber, 6);
                 this.renderCartes(paginatedCartes);
-
+    
                 document.querySelectorAll('.pagination .page-item').forEach((pageItem) => {
                     pageItem.classList.remove('active');
                 });
-
+    
                 li.classList.add('active');
+    
+                // Re-attach the event listener to the search bar
+                this.attachSearchBarListener();
             });
         }
+    
+        // Attach the event listener to the search bar initially
+        this.attachSearchBarListener();
+    }
+    
+    // Add this method to the Serie class
+    static attachSearchBarListener() {
+        const searchBar = document.getElementById('searchBar');
+        searchBar.addEventListener('input', window.searchbarcarte);
     }
 
     static renderCartes(cartes) {
@@ -102,9 +113,31 @@ export default class Serie {
                     <img loading="lazy" src="${carte.images.large}" alt="${carte.name}" class='uneCarte'>
                 </a>
                 <div class="desc">${carte.name}</div>
+                <div class="type" style="display: none;">${carte.types}</div>
+                <div class="artiste" style="display: none;">${carte.artist}</div>
             </div>
             `
         ).join('\n ');
+        const searchBar = document.getElementById('searchBar');
+        searchBar.addEventListener('input', window.searchbarcarte);
     }
 
+}
+
+window.searchbarcarte = function() {
+    const searchBar = document.getElementById('searchBar');
+    const listItems = document.querySelectorAll('.gallery');
+    const entrée = searchBar.value.toLowerCase();
+
+    for (let i = 0; i < listItems.length; i++) {
+        const texte = listItems[i].querySelector('.desc').textContent.toLowerCase();
+        const type = listItems[i].querySelector('.type').textContent.toLowerCase();
+        const artiste = listItems[i].querySelector('.artiste').textContent.toLowerCase();
+        if (texte.includes(entrée)||type.includes(entrée) || artiste.includes(entrée)) {
+            listItems[i].style.display = 'block';
+        } else {
+            listItems[i].style.display = 'none';
+        }
+        
+    }
 }
