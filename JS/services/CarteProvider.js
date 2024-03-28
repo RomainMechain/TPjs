@@ -60,8 +60,24 @@ export default class CarteProvider {
         let mesCartesJSON = JSON.parse(localStorage.getItem('mesCartes'));
         let res = [];
         for(let i = 0; i < mesCartes.length; i++) {
-            if(mesCartesJSON.includes(mesCartes[i].id)) {
-                res.push(mesCartes[i]);
+            for(let j = 0; j < mesCartesJSON.length; j++) {
+                if(mesCartes[i].id == mesCartesJSON[j][0]) {
+                    res.push(mesCartes[i]);
+                }
+            }
+        }
+        console.log("Mes cartes de mes cartes :", res);
+        return res;
+    }
+
+    static getCartesFavories = async () => {
+        let favories = JSON.parse(localStorage.getItem('favories'));
+        console.log("Les favories du provider :", favories);
+        let cartes = await this.fetchCartes();
+        let res = [];
+        for(let i = 0; i < cartes.length; i++) {
+            if(favories.includes(cartes[i].id)) {
+                res.push(cartes[i]);
             }
         }
         return res;

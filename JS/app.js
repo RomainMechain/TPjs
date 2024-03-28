@@ -36,6 +36,9 @@ const router = async () => {
         await page.afterRender();
     }
     
+
+
+
 }
 
 //localStorage.clear();
@@ -44,7 +47,9 @@ const router = async () => {
 if(localStorage.getItem('favories') !== null) {
     console.log(localStorage.getItem('favories'));
 } else {
-    localStorage.setItem('favories', JSON.stringify([]));
+    let favories = ["neo3-65"];
+    localStorage.setItem('favories', JSON.stringify(favories));
+    //localStorage.setItem('favories', JSON.stringify([]));
 }
 
 if(localStorage.getItem('mesCartes') !== null) {
@@ -53,7 +58,7 @@ if(localStorage.getItem('mesCartes') !== null) {
     let mesCartes = [];
     let cartesBasic = await CarteProvider.getCartesBasic();
     for(let i = 0; i < cartesBasic.length; i++) {
-        mesCartes.push(cartesBasic[i].id);
+        mesCartes.push([cartesBasic[i].id, 0]);
     }
     localStorage.setItem('mesCartes', JSON.stringify(mesCartes));
 }
