@@ -63,5 +63,18 @@ if(localStorage.getItem('mesCartes') !== null) {
     localStorage.setItem('mesCartes', JSON.stringify(mesCartes));
 }
 
+if(localStorage.getItem('MesNotes') !== null) {
+    console.log(localStorage.getItem('MesNotes'));
+}
+else {
+    let mesNotes = {};
+    let cartes= await CarteProvider.fetchCartes();
+    for(let i = 0; i < cartes.length; i++) {
+        mesNotes[cartes[i].id] = 0;
+    }
+    localStorage.setItem('MesNotes', JSON.stringify(mesNotes));
+}
+
+
 window.addEventListener('load', router);
 window.addEventListener('hashchange', router);
