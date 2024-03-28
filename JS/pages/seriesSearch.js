@@ -12,7 +12,7 @@ export default class SerieSearch {
                     <div class="col">
                     <div class="card shadow-sm">
                     <div class="card-header">
-                        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="${series.images.logo}" role="img" aria-label="Placeholder: Thumbnail" focusable="false" alt="${series.name}">
+                        <img loading="lazy" class="bd-placeholder-img card-img-top" width="100%" height="225" src="${series.images.logo}" role="img" aria-label="Placeholder: Thumbnail" focusable="false" alt="${series.name}">
                         </div>
                         <div class="card-body">
                             <p class="card-text">${series.name ? series.name.slice(0,100) : ''}</p>

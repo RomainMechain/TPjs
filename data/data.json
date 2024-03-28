@@ -711,6 +711,238 @@
               "small": "https://images.pokemontcg.io/neo3/28.png",
               "large": "https://images.pokemontcg.io/neo3/28_hires.png"
             }
+          },
+          {
+            "id": "neo3-50",
+            "idSerie" : "neo3",
+            "items" : [
+              "sm10-171",
+              "sm10-232"
+            ],
+            "name": "Remoraid",
+            "supertype": "Pokémon",
+            "subtypes": [
+              "Basic"
+            ],
+            "level": "15",
+            "hp": "40",
+            "types": [
+              "Water"
+            ],
+            "evolvesTo": [
+              "neo3-34"
+            ],
+            "weaknesses": [
+              {
+                "type": "Lightning",
+                "value": "×2"
+              }
+            ],
+            "number": "50",
+            "artist": "Miki Tanaka",
+            "rarity": "Common",
+            "flavorText": "It has superb accuracy. The water it shoots out can strike even moving prey from more than 300 feet.",
+            "nationalPokedexNumbers": [
+              223
+            ],
+            "legalities": {
+              "unlimited": "Legal"
+            },
+            "images": {
+              "small": "https://images.pokemontcg.io/neo3/50.png",
+              "large": "https://images.pokemontcg.io/neo3/50_hires.png"
+            }
+          },
+          {
+            "id": "neo3-34",
+            "idSerie" : "neo3",
+            "items" : [
+              "sm10-171",
+              "sm10-232"
+            ],
+            "name": "Octillery",
+            "supertype": "Pokémon",
+            "subtypes": [
+              "Stage 1"
+            ],
+            "level": "43",
+            "hp": "80",
+            "types": [
+              "Water"
+            ],
+            "evolvesFrom": "Remoraid",
+            "weaknesses": [
+              {
+                "type": "Lightning",
+                "value": "×2"
+              }
+            ],
+            "retreatCost": [
+              "Colorless",
+              "Colorless"
+            ],
+            "convertedRetreatCost": 2,
+            "number": "34",
+            "artist": "Tomokazu Komiya",
+            "rarity": "Uncommon",
+            "flavorText": "It traps enemies with its suction cupped tentacles then smashes them with its rockhard head.",
+            "nationalPokedexNumbers": [
+              224
+            ],
+            "legalities": {
+              "unlimited": "Legal"
+            },
+            "images": {
+              "small": "https://images.pokemontcg.io/neo3/34.png",
+              "large": "https://images.pokemontcg.io/neo3/34_hires.png"
+            }
+          },
+          {
+            "id": "neo3-13",
+            "idSerie" : "neo3",
+            "items" : [
+              "sm10-171",
+              "sm10-232"
+            ],
+            "name": "Raikou",
+            "supertype": "Pokémon",
+            "subtypes": [
+              "Basic"
+            ],
+            "level": "40",
+            "hp": "80",
+            "types": [
+              "Lightning"
+            ],
+            "abilities": [
+              {
+                "name": "Lightning Burst",
+                "text": "Whenever you attach a Lightning Energy card from your hand to Raikou, if your opponent has any Benched Pokémon, he or she chooses 1 of them and switches it with the Defending Pokémon. This power stops working while Raikou is Asleep, Confused, or Paralyzed.",
+                "type": "Pokémon Power"
+              }
+            ],
+            "weaknesses": [
+              {
+                "type": "Fighting",
+                "value": "×2"
+              }
+            ],
+            "retreatCost": [
+              "Colorless"
+            ],
+            "convertedRetreatCost": 1,
+            "number": "13",
+            "artist": "Ken Sugimori",
+            "rarity": "Rare Holo",
+            "flavorText": "The rain clouds it carries let it fire thunderbolts at will. They say that it descended with lightning.",
+            "nationalPokedexNumbers": [
+              243
+            ],
+            "legalities": {
+              "unlimited": "Legal"
+            },
+            "images": {
+              "small": "https://images.pokemontcg.io/neo3/13.png",
+              "large": "https://images.pokemontcg.io/neo3/13_hires.png"
+            }
+          },
+          {
+            "id": "neo3-14",
+            "idSerie" : "neo3",
+            "items" : [
+              "sm10-171",
+              "sm10-232"
+            ],
+            "name": "Suicune",
+            "supertype": "Pokémon",
+            "subtypes": [
+              "Basic"
+            ],
+            "level": "33",
+            "hp": "70",
+            "types": [
+              "Water"
+            ],
+            "abilities": [
+              {
+                "name": "Crystal Body",
+                "text": "Prevent all effects of your opponent's attacks, other than damage, done to Suicune. This power stops working while Suicune is Asleep, Confused, or Paralyzed.",
+                "type": "Pokémon Power"
+              }
+            ],
+            "weaknesses": [
+              {
+                "type": "Lightning",
+                "value": "×2"
+              }
+            ],
+            "retreatCost": [
+              "Colorless"
+            ],
+            "convertedRetreatCost": 1,
+            "number": "14",
+            "artist": "Ken Sugimori",
+            "rarity": "Rare Holo",
+            "flavorText": "Said to be the reincarnation of north winds, it can instantly purify filthy, murky water.",
+            "nationalPokedexNumbers": [
+              245
+            ],
+            "legalities": {
+              "unlimited": "Legal"
+            },
+            "images": {
+              "small": "https://images.pokemontcg.io/neo3/14.png",
+              "large": "https://images.pokemontcg.io/neo3/14_hires.png"
+            }
+          },
+          {
+            "id": "neo3-20",
+            "idSerie" : "neo3",
+            "items" : [
+              "sm10-171",
+              "sm10-232"
+            ],
+            "name": "Lugia",
+            "supertype": "Pokémon",
+            "subtypes": [
+              "Basic"
+            ],
+            "level": "43",
+            "hp": "90",
+            "types": [
+              "Psychic"
+            ],
+            "weaknesses": [
+              {
+                "type": "Psychic",
+                "value": "×2"
+              }
+            ],
+            "resistances": [
+              {
+                "type": "Fighting",
+                "value": "-30"
+              }
+            ],
+            "retreatCost": [
+              "Colorless",
+              "Colorless"
+            ],
+            "convertedRetreatCost": 2,
+            "number": "20",
+            "artist": "Aya Kusube",
+            "rarity": "Rare",
+            "flavorText": "It is said to be the guardian of the seas. It is rumored to have been seen on the night of a storm.",
+            "nationalPokedexNumbers": [
+              249
+            ],
+            "legalities": {
+              "unlimited": "Legal"
+            },
+            "images": {
+              "small": "https://images.pokemontcg.io/neo3/20.png",
+              "large": "https://images.pokemontcg.io/neo3/20_hires.png"
+            }
           }
     ],
     "series" : [
