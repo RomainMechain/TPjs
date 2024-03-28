@@ -27,7 +27,7 @@ export default class Carte {
                         <div class='flex'>
                         <h1>${cartes.name}</h1>
                         </div>
-                        <p id='test'><span class='label'>De type :</span>  ${cartes.subtypes}</p>
+                        <p id='test'><span class='label'>De type :</span>  ${cartes.types}</p>
                         <p><span class='label'>Numeros de carte :</span>  ${cartes.number}</p>
                         <p><span class='label'>Artiste :</span>  ${cartes.artist}</p>
                         <p><span class='label'>Rareté :</span>  ${cartes.rarity}</p>
