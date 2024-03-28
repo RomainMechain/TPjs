@@ -105,7 +105,7 @@ export default class Carte {
                         mesCartes[i][1]++;
                         console.log("Niveau de la carte :", mesCartes[i][1]);
                         document.getElementById('level').textContent = mesCartes[i][1];
-                        if (mesCartes[i][1] >= cartes.level) {
+                        if (mesCartes[i][1] >= cartes.level && cartes.evolvesTo != null) {
                             console.log("Evolution de la carte en ", cartes.evolvesTo[0]);
                             //Ajoute la carte évoluée à mesCartes avec le niveau de la carte actuelle
                             mesCartes.push([cartes.evolvesTo[0], mesCartes[i][1]]);
