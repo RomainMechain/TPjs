@@ -132,6 +132,15 @@ export default class Carte {
                             console.log("Evolution de la carte en ", cartes.evolvesTo[0]);
                             //Ajoute la carte évoluée à mesCartes avec le niveau de la carte actuelle
                             mesCartes.push([cartes.evolvesTo[0], mesCartes[i][1]]);
+                            //Verifie si elle est dans les favories et ajoute la nouvelle carte dedans si c'est le cas
+                            let favorites = localStorage.getItem('favories');
+                            if (favorites) {
+                                favorites = JSON.parse(favorites);
+                                if (favorites.indexOf(request.id) !== -1) {
+                                    favorites.push(cartes.evolvesTo[0]);
+                                    localStorage.setItem('favories', JSON.stringify(favorites));
+                                }
+                            }
                             //enlève la carte de mesCartes
                             mesCartes.splice(i, 1);
                             //redirimger vers la page de la nouvelle carte
