@@ -9,7 +9,10 @@ export default class Carte {
             let request = Utiles.parseRequestURL();
             let cartes = await CarteProvider.getCartes(request.id);
             let objet = await CarteEquipementProvider.getCarteEquipementByItems(cartes.items);
+            let allObjet = await CarteEquipementProvider.fetchCarteEquipement();
+            let difference = allObjet.filter(o1 => !objet.some(o2 => o1.id === o2.id));
             let mesCartes = JSON.parse(localStorage.getItem('mesCartes'));
+            let MesNotes = JSON.parse(localStorage.getItem('MesNotes'));
             let currentLevel = 0;
             for (let i = 0; i < mesCartes.length; i++) {
                 if (mesCartes[i][0] == request.id) {
@@ -31,8 +34,19 @@ export default class Carte {
                         <p><span class='label'>Numeros de carte :</span>  ${cartes.number}</p>
                         <p><span class='label'>Artiste :</span>  ${cartes.artist}</p>
                         <p><span class='label'>Rareté :</span>  ${cartes.rarity}</p>
-                        <p><span>Niveau actuel :</span>  <span id='level'>${currentLevel}</span></p>
-                        <p><span>Evolution possible :</span>  ${cartes.evolvesTo != null}</p>
+                        <p><span class='label'>Niveau actuel :</span>  <span id='level'>${currentLevel}</span></p>
+                        <p><span class='label'>Evolution possible :</span>  ${cartes.evolvesTo != null}</p>
+                        <p><span class='label'>Note :</span>  <span id='resnote'>${MesNotes[request.id]}</span></p>
+                        <label for="dog-names">choisir note:</label> 
+                        <select name="notes" id="note"> 
+                            <option value="0">0</option> 
+                            <option value="1">1</option> 
+                            <option value="2">2</option> 
+                            <option value="3">3</option> 
+                            <option value="4">4</option>
+                            <option value="5">5</option> 
+                        </select>
+                        <button id="${cartes.id}" class='bouttonNote'>Noter</button>
                         
                     </div>
                 </section>
@@ -40,6 +54,15 @@ export default class Carte {
                 <button id="${cartes.id}" class='bouttonNiveau'>Monter de niveau</button>
                 <section>
                 <h2>Tous les objets</h2>
+                <label for="objet">choisir un objet:</label>
+                <select name="ojbet" id="ojbet">
+                    ${ difference.map(Aobjet => 
+                        /*html*/`
+                            <option value="${Aobjet.id}">${Aobjet.name}</option> 
+                        `
+                        ).join('\n ')}
+                    </select>
+                <button id="ajoutObjet" class='bouttonObjet'>Ajouter</button>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     ${ objet.map(objet => 
                         /*html*/`
@@ -117,6 +140,24 @@ export default class Carte {
                     }
                 }
                 localStorage.setItem('mesCartes', JSON.stringify(mesCartes));
+            });
+
+            let noteButton = document.querySelector('.bouttonNote');
+            noteButton.addEventListener('click', function() {
+                let MesNotes = JSON.parse(localStorage.getItem('MesNotes'));
+                console.log("Mes notes :", MesNotes);
+                let note = document.getElementById('note').value;
+                MesNotes[request.id] = note;
+                console.log("Note de la carte :", MesNotes[request.id]);
+                localStorage.setItem('MesNotes', JSON.stringify(MesNotes));
+                document.getElementById('resnote').textContent = note;
+            });
+
+            let ajoutObjetButton = document.querySelector('.bouttonObjet');
+            ajoutObjetButton.addEventListener('click', function() {
+                let objet = document.getElementById('ojbet').value;
+                
+
             });
         }
     }
