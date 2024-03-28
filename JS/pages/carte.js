@@ -21,7 +21,7 @@ export default class Carte {
                 <link rel="stylesheet" href="../../css/carte.css">
                 <section class='flex'>
                     <di>
-                        <img classe="carte" src="${cartes.images.large}" alt="${cartes.name}"/ id='logo'>
+                        <img loading="lazy" classe="carte" src="${cartes.images.large}" alt="${cartes.name}"/ id='logo'>
                     </di>
                     <div id='info'>
                         <div class='flex'>
@@ -32,6 +32,7 @@ export default class Carte {
                         <p><span class='label'>Artiste :</span>  ${cartes.artist}</p>
                         <p><span class='label'>Rareté :</span>  ${cartes.rarity}</p>
                         <p><span>Niveau actuel :</span>  <span id='level'>${currentLevel}</span></p>
+                        <p><span>Evolution possible :</span>  ${cartes.evolvesTo != null}</p>
                         
                     </div>
                 </section>
@@ -44,7 +45,7 @@ export default class Carte {
                         /*html*/`
                         <div class="gallery">
                             <a href="#/equipement/${objet.id}">
-                                <img src="${objet.images.large}" alt="${objet.name}" class='uneCarte'>
+                                <img loading="lazy" src="${objet.images.large}" alt="${objet.name}" class='uneCarte'>
                             </a>
                             <div class="desc">${objet.name}</div>
                         </div>

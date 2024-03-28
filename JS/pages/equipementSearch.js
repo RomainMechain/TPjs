@@ -12,7 +12,7 @@ export default class EquipementSearch {
                     /*html*/`
                     <div class="gallery">
                         <a href="#/equipement/${equipement.id}">
-                            <img class="equipement"src="${equipement.images.large}" alt="${equipement.name}" >
+                            <img loading="lazy" class="equipement"src="${equipement.images.large}" alt="${equipement.name}" >
                         </a>
                         <div class="desc">${equipement.name}</div>
                     </div>

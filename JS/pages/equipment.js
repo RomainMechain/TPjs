@@ -13,7 +13,7 @@ export default class Equipement {
             <link rel="stylesheet" href="../../css/carte.css">
             <section class='flex'>
                 <di>
-                    <img classe="carte" src="${objet.images.large}" alt="${objet.name}"/ id='logo'>
+                    <img loading="lazy" classe="carte" src="${objet.images.large}" alt="${objet.name}"/ id='logo'>
                 </di>
                 <div id='info'>
                     <h1>${objet.name}</h1>
@@ -32,7 +32,7 @@ export default class Equipement {
                     /*html*/`
                     <div class="gallery">
                         <a href="#/carte/${carteObjet.id}">
-                            <img src="${carteObjet.images.large}" alt="${carteObjet.name}" class='uneCarte'>
+                            <img loading="lazy" src="${carteObjet.images.large}" alt="${carteObjet.name}" class='uneCarte'>
                         </a>
                         <div class="desc">${carteObjet.name}</div>
                     </div>
