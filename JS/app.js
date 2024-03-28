@@ -29,6 +29,9 @@ const router = async () => {
     let page = routes[parsedURL]  
     console.log(page)
     content.innerHTML = await page.render();
+    if (page.afterRender) {
+        await page.afterRender();
+    }
 }
 
 //localStorage.clear();
@@ -48,7 +51,7 @@ if(localStorage.getItem('mesCartes') !== null) {
     let mesCartes = [];
     let cartesBasic = await CarteProvider.getCartesBasic();
     for(let i = 0; i < cartesBasic.length; i++) {
-        mesCartes.push(cartesBasic[i].id);
+        mesCartes.push([cartesBasic[i].id, 0]);
     }
     localStorage.setItem('mesCartes', JSON.stringify(mesCartes));
 }

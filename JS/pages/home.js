@@ -3,6 +3,7 @@ import CarteProvider from "../services/CarteProvider.js";
 export default class Home {
     static async render () {
         let cartes = await CarteProvider.getCartesFavories();
+        console.log(cartes);
         let view =  /*html*/`
             <link rel="stylesheet" href="../../css/home.css">
             <h2>Page d'accueil</h2>
