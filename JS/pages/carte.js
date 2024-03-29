@@ -64,7 +64,7 @@ export default class Carte {
                         ).join('\n ')}
                     </select>
                 <button id="ajoutObjet" class='bouttonObjet'>Ajouter</button>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id='carteEquipementContainer'>
                     ${ objet.map(objet => 
                         /*html*/`
                         <div class="gallery">
@@ -167,7 +167,24 @@ export default class Carte {
             ajoutObjetButton.addEventListener('click', function() {
                 let objet = document.getElementById('ojbet').value;
                 CarteEquipementManager.addEquipementToCarte(request.id, objet);
+                Carte.renderCarteEquipement(objet);
 
             });
         }
+
+        static renderCarteEquipement = async (id) => {
+            let cartes = await CarteEquipementProvider.getCarteEquipement(id);
+            let container = document.getElementById('carteEquipementContainer');
+            let view =  /*html*/`
+                <div class="gallery">
+                    <a href="#/carte/${cartes.id}">
+                        <img loading="lazy" src="${cartes.images.large}" alt="${cartes.name}" class='uneCarte'>
+                    </a>
+                    <div class="desc">${cartes.name}</div>
+                </div>
+            `
+            container.innerHTML += view;
+        }
+
+
     }
