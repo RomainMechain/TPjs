@@ -168,6 +168,10 @@ export default class Carte {
                 let objet = document.getElementById('ojbet').value;
                 CarteEquipementManager.addEquipementToCarte(request.id, objet);
                 Carte.renderCarteEquipement(objet);
+                //enlève l'objet des options de l'input
+                let select = document.getElementById('ojbet');
+                let opt = select.querySelector(`option[value="${objet}"]`);
+                select.removeChild(opt);
 
             });
         }
