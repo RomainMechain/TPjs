@@ -1,6 +1,7 @@
 import CarteProvider from "../services/CarteProvider.js";
 import Utiles from "../services/utiles.js";
 import CarteEquipementProvider from "../services/CarteEquipementProvider.js";
+import CarteEquipementManager from "../services/CarteEquipementManager.js";
 
 
 export default class Carte {
@@ -165,7 +166,7 @@ export default class Carte {
             let ajoutObjetButton = document.querySelector('.bouttonObjet');
             ajoutObjetButton.addEventListener('click', function() {
                 let objet = document.getElementById('ojbet').value;
-                
+                CarteEquipementManager.addEquipementToCarte(request.id, objet);
 
             });
         }
