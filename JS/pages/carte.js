@@ -1,6 +1,7 @@
 import CarteProvider from "../services/CarteProvider.js";
 import Utiles from "../services/utiles.js";
 import CarteEquipementProvider from "../services/CarteEquipementProvider.js";
+import CarteEquipementManager from "../services/CarteEquipementManager.js";
 
 
 export default class Carte {
@@ -63,7 +64,7 @@ export default class Carte {
                         ).join('\n ')}
                     </select>
                 <button id="ajoutObjet" class='bouttonObjet'>Ajouter</button>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id='carteEquipementContainer'>
                     ${ objet.map(objet => 
                         /*html*/`
                         <div class="gallery">
@@ -165,8 +166,29 @@ export default class Carte {
             let ajoutObjetButton = document.querySelector('.bouttonObjet');
             ajoutObjetButton.addEventListener('click', function() {
                 let objet = document.getElementById('ojbet').value;
-                
+                CarteEquipementManager.addEquipementToCarte(request.id, objet);
+                Carte.renderCarteEquipement(objet);
+                //enlève l'objet des options de l'input
+                let select = document.getElementById('ojbet');
+                let opt = select.querySelector(`option[value="${objet}"]`);
+                select.removeChild(opt);
 
             });
         }
+
+        static renderCarteEquipement = async (id) => {
+            let cartes = await CarteEquipementProvider.getCarteEquipement(id);
+            let container = document.getElementById('carteEquipementContainer');
+            let view =  /*html*/`
+                <div class="gallery">
+                    <a href="#/carte/${cartes.id}">
+                        <img loading="lazy" src="${cartes.images.large}" alt="${cartes.name}" class='uneCarte'>
+                    </a>
+                    <div class="desc">${cartes.name}</div>
+                </div>
+            `
+            container.innerHTML += view;
+        }
+
+
     }
