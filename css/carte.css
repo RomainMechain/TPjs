@@ -54,6 +54,12 @@ label{
 select{
     width: 5em;
 }
+.desc{
+    flex-basis: 100%;
+}
+.boutonsupprimer{
+    width:5em;
+
 .flex-container {
     display: flex;
     align-items: center;
