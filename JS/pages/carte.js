@@ -67,7 +67,7 @@ export default class Carte {
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id='carteEquipementContainer'>
                     ${ objet.map(objet => 
                         /*html*/`
-                        <div class="gallery">
+                        <div class="gallery" id="${objet.id}">
                             <a href="#/equipement/${objet.id}">
                                 <img loading="lazy" src="${objet.images.large}" alt="${objet.name}" class='uneCarte'>
                             </a>
@@ -175,20 +175,52 @@ export default class Carte {
                 select.removeChild(opt);
 
             });
+            let supprimerObjetButtons = document.querySelectorAll('.boutonsupprimer');
+            supprimerObjetButtons.forEach(supprimerObjetButton => {
+                supprimerObjetButton.addEventListener('click', function() {
+                    let objet = supprimerObjetButton.id;
+                    CarteEquipementManager.removeEquipementFromCarte(request.id, objet);
+                    let element = document.getElementById(objet);
+                    console.log(element);
+                    console.log("Element à supprimer :", element.id);
+                    if (element) {
+                        element.parentNode.removeChild(element);
+                    } else {
+                        console.log("Element introuvable");
+                    } 
+                    // ajouter l'objet des options de l'input
+                    let elements = element.getElementsByClassName("desc");
+                    let name = "";
+                        for (let i = 0; i < elements.length; i++) {
+                            name = elements[i].innerHTML;
+                            console.log(name);
+                        }
+                        console.log(objet)
+                        let select = document.getElementById('ojbet');
+                        // select.appendChild(new Option(name, objet));
+
+                    // let opt = select.querySelector(`option[value="${objet}"]`);
+                    // console.log(opt)
+                    // select.removeChild(opt);
+                });
+                
+            });
         }
 
         static renderCarteEquipement = async (id) => {
             let cartes = await CarteEquipementProvider.getCarteEquipement(id);
             let container = document.getElementById('carteEquipementContainer');
             let view =  /*html*/`
-                <div class="gallery">
+                <div class="gallery" id="${cartes.id}">
                     <a href="#/carte/${cartes.id}">
                         <img loading="lazy" src="${cartes.images.large}" alt="${cartes.name}" class='uneCarte'>
                     </a>
                     <div class="desc">${cartes.name}</div>
+                    <button id="${cartes.id}" class='boutonsupprimer'>Supprimer</button>
                 </div>
             `
             container.innerHTML += view;
+            await this.afterRender();
         }
 
 
