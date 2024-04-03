@@ -184,7 +184,7 @@ export default class Carte {
             let container = document.getElementById('carteEquipementContainer');
             let view =  /*html*/`
                 <div class="gallery">
-                    <a href="#/carte/${cartes.id}">
+                    <a href="#/equipement/${cartes.id}">
                         <img loading="lazy" src="${cartes.images.large}" alt="${cartes.name}" class='uneCarte'>
                     </a>
                     <div class="desc">${cartes.name}</div>
