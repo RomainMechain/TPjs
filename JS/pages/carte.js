@@ -36,10 +36,10 @@ export default class Carte {
                         <p><span class='label'>Artiste :</span>  ${cartes.artist}</p>
                         <p><span class='label'>Rareté :</span>  ${cartes.rarity}</p>
                         <p><span class='label'>Niveau actuel :</span>  <span id='level'>${currentLevel}</span></p>
-                        <p><span class='label'>Evolution possible :</span>  ${cartes.evolvesTo != null}</p>
+                        <p><span class='label'>Evolution possible :</span>  ${cartes.evolvesTo == null ? '<span>&#10539;</span>' : '<span>&#10003;</span>'}</p>
                         <p><span class='label'>Note :</span>  <span id='resnote'>${MesNotes[request.id]}</span></p>
                         <label for="dog-names">choisir note:</label> 
-                        <select name="notes" id="note"> 
+                        <select name="notes" id="note" > 
                             <option value="0">0</option> 
                             <option value="1">1</option> 
                             <option value="2">2</option> 
@@ -54,16 +54,19 @@ export default class Carte {
                 <button id="${cartes.id}" class='bouttonFav'>Ajouter aux favoris</button>
                 <button id="${cartes.id}" class='bouttonNiveau'>Monter de niveau</button>
                 <section>
+                
                 <h2>Tous les objets</h2>
-                <label for="objet">choisir un objet:</label>
-                <select name="ojbet" id="ojbet">
-                    ${ difference.map(Aobjet => 
-                        /*html*/`
-                            <option value="${Aobjet.id}">${Aobjet.name}</option> 
-                        `
-                        ).join('\n ')}
+                <div class="flex-container">
+                    <label for="objet">choisir un objet:</label>
+                    <select name="ojbet" id="ojbet" class="form-select" id="exampleSelect1">
+                        ${ difference.map(Aobjet => 
+                            /*html*/`
+                                <option value="${Aobjet.id}">${Aobjet.name}</option> 
+                            `
+                            ).join('\n ')}
                     </select>
-                <button id="ajoutObjet" class='bouttonObjet'>Ajouter</button>
+                    <button id="ajoutObjet" class='bouttonObjet'>Ajouter</button>
+                </div>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id='carteEquipementContainer'>
                     ${ objet.map(objet => 
                         /*html*/`
