@@ -53,7 +53,8 @@
       "items": [
         "sm10-171",
         "sm10-232",
-        "ex6-91"
+        "ex6-91",
+        "ex4-74"
       ],
       "name": "Shining Gyarados",
       "supertype": "Pokémon",
@@ -433,7 +434,8 @@
       "idSerie": "neo3",
       "items": [
         "sm10-171",
-        "sm10-232"
+        "sm10-232",
+        "ex6-91"
       ],
       "name": "Delibird",
       "supertype": "Pokémon",
@@ -943,6 +945,100 @@
       "images": {
         "small": "https://images.pokemontcg.io/neo3/20.png",
         "large": "https://images.pokemontcg.io/neo3/20_hires.png"
+      }
+    },
+    {
+      "id": "ecard3-75",
+      "idSerie": "ecard3",
+      "items": [
+        "sm10-171",
+        "sm10-232"
+      ],
+      "level": 20,
+      "name": "Magikarp",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "30",
+      "types": [
+        "Water"
+      ],
+      "evolvesTo": [
+        "ecard3-11"
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "75",
+      "artist": "Keiko Fukuyama",
+      "rarity": "Common",
+      "nationalPokedexNumbers": [
+        129
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/ecard3/75.png",
+        "large": "https://images.pokemontcg.io/ecard3/75_hires.png"
+      }
+    },
+    {
+      "id": "ecard3-11",
+      "idSerie": "ecard3",
+      "items": [
+        "sm10-171",
+        "sm10-232"
+      ],
+      "level": 45,
+      "name": "Gyarados",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "90",
+      "types": [
+        "Water"
+      ],
+      "evolvesFrom": "Magikarp",
+      "abilities": [
+        {
+          "name": "Flame Vapor",
+          "text": "When you play Gyarados from your hand to evolve your Active Pokémon, you may flip 2 coins. For each heads, discard an Energy card attached to the Defending Pokémon.",
+          "type": "Poké-Power"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "11",
+      "artist": "Kimiya Masago",
+      "rarity": "Rare",
+      "nationalPokedexNumbers": [
+        130
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/ecard3/11.png",
+        "large": "https://images.pokemontcg.io/ecard3/11_hires.png"
       }
     }
   ],
