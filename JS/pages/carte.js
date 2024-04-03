@@ -168,18 +168,22 @@ export default class Carte {
             });
 
             let ajoutObjetButton = document.querySelector('.bouttonObjet');
-            ajoutObjetButton.addEventListener('click', function() {
-                let objet = document.getElementById('ojbet').value;
-                CarteEquipementManager.addEquipementToCarte(request.id, objet);
-                Carte.renderCarteEquipement(objet);
-                //enlève l'objet des options de l'input
-                let select = document.getElementById('ojbet');
-                let opt = select.querySelector(`option[value="${objet}"]`);
-                select.removeChild(opt);
-
-            });
+            if (!ajoutObjetButton.hasEventListener) {
+                ajoutObjetButton.addEventListener('click', function() {
+                    let objet = document.getElementById('ojbet').value;
+                    CarteEquipementManager.addEquipementToCarte(request.id, objet);
+                    Carte.renderCarteEquipement(objet);
+                    //enlève l'objet des options de l'input
+                    let select = document.getElementById('ojbet');
+                    let opt = select.querySelector(`option[value="${objet}"]`);
+                    select.removeChild(opt);
+                });
+                ajoutObjetButton.hasEventListener = true;
+            }
+            
             let supprimerObjetButtons = document.querySelectorAll('.boutonsupprimer');
             supprimerObjetButtons.forEach(supprimerObjetButton => {
+            if (!supprimerObjetButton.hasEventListener) {
                 supprimerObjetButton.addEventListener('click', function() {
                     let objet = supprimerObjetButton.id;
                     CarteEquipementManager.removeEquipementFromCarte(request.id, objet);
@@ -191,7 +195,6 @@ export default class Carte {
                     } else {
                         console.log("Element introuvable");
                     } 
-                    // ajouter l'objet des options de l'input
                     let elements = element.getElementsByClassName("desc");
                     let name = "";
                         for (let i = 0; i < elements.length; i++) {
@@ -200,14 +203,12 @@ export default class Carte {
                         }
                         console.log(objet)
                         let select = document.getElementById('ojbet');
-                        // select.appendChild(new Option(name, objet));
+                        select.appendChild(new Option(name, objet));
 
-                    // let opt = select.querySelector(`option[value="${objet}"]`);
-                    // console.log(opt)
-                    // select.removeChild(opt);
                 });
-                
-            });
+                supprimerObjetButton.hasEventListener = true;
+            }
+        });
         }
 
         static renderCarteEquipement = async (id) => {
