@@ -72,6 +72,7 @@ export default class Carte {
                                 <img loading="lazy" src="${objet.images.large}" alt="${objet.name}" class='uneCarte'>
                             </a>
                             <div class="desc">${objet.name}</div>
+                            <button id="${objet.id}" class='boutonsupprimer'>Supprimer</button>
                         </div>
                         `
                         ).join('\n ')

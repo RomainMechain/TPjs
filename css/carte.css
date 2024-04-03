@@ -54,3 +54,9 @@ label{
 select{
     width: 5em;
 }
+.desc{
+    flex-basis: 100%;
+}
+.boutonsupprimer{
+    width:5em;
+}
