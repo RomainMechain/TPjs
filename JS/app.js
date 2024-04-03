@@ -47,9 +47,7 @@ const router = async () => {
 if(localStorage.getItem('favories') !== null) {
     console.log(localStorage.getItem('favories'));
 } else {
-    let favories = ["neo3-65"];
-    localStorage.setItem('favories', JSON.stringify(favories));
-    //localStorage.setItem('favories', JSON.stringify([]));
+    localStorage.setItem('favories', JSON.stringify([]));
 }
 
 if(localStorage.getItem('mesCartes') !== null) {

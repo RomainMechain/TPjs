@@ -9,6 +9,7 @@ export default class Equipement {
         let objet = await CarteEquipementProvider.getCarteEquipement(request.id);
         
         let carteObjet = await  CarteProvider.getCarteByItems(objet.id);
+        carteObjet = await CarteProvider.filterByMesCartes(carteObjet);
         carteObjet = await Pagination.paginCartes(carteObjet, 1, 6);
 
         let view =  /*html*/`
@@ -56,6 +57,7 @@ export default class Equipement {
         let request = Utiles.parseRequestURL();
         let objet = await CarteEquipementProvider.getCarteEquipement(request.id);
         let cartes = await  CarteProvider.getCarteByItems(objet.id);
+        cartes = await CarteProvider.filterByMesCartes(cartes);
         let nbPages = Math.ceil(cartes.length / 6);
     
         let pagination = document.querySelector('.pagination');
