@@ -54,3 +54,10 @@ label{
 select{
     width: 5em;
 }
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+.form-select{
+    width: 20em;
+}
