@@ -8,7 +8,7 @@ export default class Home {
         cartes = await Pagination.paginCartes(cartes, 1, 6);
         let view =  /*html*/`
             <link rel="stylesheet" href="../../css/home.css">
-            <h2>Page d'accueil</h2>
+            <h2>Bienvenue sur PokéExplorer</h2>
             <section>
             <h3>Les cartes favorites</h3>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id='carteContainer'>
