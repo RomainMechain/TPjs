@@ -1,0 +1,86 @@
+.navbar{
+    margin: 0.5em;
+}
+body{
+    background-color: #d4d4d4;
+}
+.image{
+    padding-left: 1em;
+    width: 5em;
+    height: 5em;
+    object-fit: cover;
+}
+.navbar-brand{
+    font-size: 3em;
+
+}
+
+button {
+    display: inline-block;
+    background-color: #686869;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 1.5em;
+    width: 10em;;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  button:hover {
+    color: black;
+
+    background-color: #d9d9da;
+  }
+  button:hover span {
+    padding-right: 25px;
+  }
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .row{
+    margin-top: 2em;
+  }
+  div.gallery {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 1em;
+      border: 1px solid #ccc;
+      float: left;
+      width: 25%;
+      height: 25%;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+    
+    div.gallery img {
+      padding-top: 1em;
+      width: 100%;
+      height: auto;
+    }
+    
+    div.desc {
+      padding-top: 1em;
+      text-align: center;
+    }

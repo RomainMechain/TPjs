@@ -1,0 +1,29 @@
+.row{
+  margin-top: 2em;
+}
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em;
+    border: 1px solid #ccc;
+    float: left;
+    width: 25%;
+    height: 25%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery .equipement {
+    padding-top: 1em;
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding-top: 1em;
+    text-align: center;
+  }

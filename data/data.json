@@ -1,0 +1,1239 @@
+{
+  "cartes": [
+    {
+      "id": "neo3-66",
+      "idSerie": "neo3",
+      "items": [
+        "sm10-164"
+      ],
+      "name": "Shining Magikarp",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "11",
+      "hp": "30",
+      "types": [
+        "Water"
+      ],
+      "evolvesTo": [
+        "neo3-65"
+      ],
+      "rules": [
+        "You can't have more than 1 Shining Magikarp in your deck."
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "66",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare Shining",
+      "flavorText": "An underpowered, pathetic Pokémon. It may jump high on rare occasions, but never more than seven feet.",
+      "nationalPokedexNumbers": [
+        129
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo3/66.png",
+        "large": "https://images.pokemontcg.io/neo3/66_hires.png"
+      }
+    },
+    {
+      "id": "neo3-65",
+      "idSerie": "neo3",
+      "items": [
+        "sm10-171",
+        "sm10-232",
+        "ex6-91",
+        "ex4-74"
+      ],
+      "name": "Shining Gyarados",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "level": "62",
+      "hp": "100",
+      "types": [
+        "Water"
+      ],
+      "rules": [
+        "You can't have more than 1 Shining Gyarados in your deck."
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 3,
+      "number": "65",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare Shining",
+      "flavorText": "Once it appears, it goes on a rampage. It remains enraged until it demolishes everything around it.",
+      "nationalPokedexNumbers": [
+        130
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo3/65.png",
+        "large": "https://images.pokemontcg.io/neo3/65_hires.png"
+      }
+    },
+    {
+      "id": "neo1-65",
+      "idSerie": "neo1",
+      "items": [
+        "sm10-164"
+      ],
+      "name": "Mareep",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "12",
+      "hp": "40",
+      "types": [
+        "Lightning"
+      ],
+      "evolvesTo": [
+        "neo1-34"
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "65",
+      "artist": "Ken Sugimori",
+      "rarity": "Common",
+      "flavorText": "If static electricity builds in its body, its fleece doubles in volume. Touching it will shock you.",
+      "nationalPokedexNumbers": [
+        179
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/65.png",
+        "large": "https://images.pokemontcg.io/neo1/65_hires.png"
+      }
+    },
+    {
+      "id": "neo1-34",
+      "idSerie": "neo1",
+      "items": [
+        "sm10-171",
+        "sm10-232"
+      ],
+      "name": "Flaaffy",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "level": "26",
+      "hp": "60",
+      "types": [
+        "Lightning"
+      ],
+      "evolvesFrom": "Mareep",
+      "evolvesTo": [
+        "neo1-1"
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "34",
+      "artist": "Ken Sugimori",
+      "rarity": "Uncommon",
+      "flavorText": "As a result of storing too much electricity, it developed patches where even downy wool won't grow.",
+      "nationalPokedexNumbers": [
+        180
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/34.png",
+        "large": "https://images.pokemontcg.io/neo1/34_hires.png"
+      }
+    },
+    {
+      "id": "neo1-1",
+      "idSerie": "neo1",
+      "items": [
+        "sm10-232"
+      ],
+      "name": "Ampharos",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "level": "40",
+      "hp": "80",
+      "types": [
+        "Lightning"
+      ],
+      "evolvesFrom": "Flaaffy",
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "1",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare Holo",
+      "flavorText": "The tail's tip shines brightly and can be seen from far away. It acts as a beacon for lost people.",
+      "nationalPokedexNumbers": [
+        181
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo1/1.png",
+        "large": "https://images.pokemontcg.io/neo1/1_hires.png"
+      }
+    },
+    {
+      "id": "neo3-1",
+      "idSerie": "neo3",
+      "items": [
+        "sm10-164"
+      ],
+      "name": "Ampharos",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "level": "46",
+      "hp": "90",
+      "types": [
+        "Lightning"
+      ],
+      "evolvesFrom": "Flaaffy",
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 3,
+      "number": "1",
+      "artist": "Toshinao Aoki",
+      "rarity": "Rare Holo",
+      "flavorText": "The bright light on its tail can be seen far away. It has been treasured since ancient times as a beacon.",
+      "nationalPokedexNumbers": [
+        181
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo3/1.png",
+        "large": "https://images.pokemontcg.io/neo3/1_hires.png"
+      }
+    },
+    {
+      "id": "neo3-2",
+      "idSerie": "neo3",
+      "items": [
+        "sm10-171",
+        "sm10-232"
+      ],
+      "name": "Blissey",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "level": "62",
+      "hp": "120",
+      "types": [
+        "Colorless"
+      ],
+      "evolvesFrom": "Chansey",
+      "abilities": [
+        {
+          "name": "Softboiled",
+          "text": "When you play Blissey from your hand, you may flip a coin. If heads, remove 8 damage counters from Blissey. If tails, remove 4 damage counters from Blissey. Either way, if Blissey has fewer damage counters than that, remove all of them.",
+          "type": "Pokémon Power"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Psychic",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "2",
+      "artist": "Yuka Morii",
+      "rarity": "Rare Holo",
+      "flavorText": "Anyone who takes even one bite of Blissey's egg becomes unfailingly caring and pleasant to everyone.",
+      "nationalPokedexNumbers": [
+        242
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo3/2.png",
+        "large": "https://images.pokemontcg.io/neo3/2_hires.png"
+      }
+    },
+    {
+      "id": "neo3-3",
+      "idSerie": "neo3",
+      "items": [
+        "sm10-232"
+      ],
+      "name": "Celebi",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "16",
+      "hp": "50",
+      "types": [
+        "Psychic"
+      ],
+      "abilities": [
+        {
+          "name": "Time Travel",
+          "text": "If an opponent's attack would Knock Out Celebi, flip a coin. If heads, Celebi isn't Knocked Out and you shuffle it and all cards attached to it into your deck. This power doesn't work if Celebi is already Asleep, Confused, or Paralyzed.",
+          "type": "Pokémon Power"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "3",
+      "artist": "Hironobu Yoshida",
+      "rarity": "Rare Holo",
+      "flavorText": "This Pokémon wanders across time. Grass and trees flourish in the forests in which it has appeared.",
+      "nationalPokedexNumbers": [
+        251
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo3/3.png",
+        "large": "https://images.pokemontcg.io/neo3/3_hires.png"
+      }
+    },
+    {
+      "id": "neo3-4",
+      "idSerie": "neo3",
+      "items": [
+        "sm10-171",
+        "sm10-232"
+      ],
+      "name": "Crobat",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "level": "51",
+      "hp": "90",
+      "types": [
+        "Grass"
+      ],
+      "evolvesFrom": "Golbat",
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "number": "4",
+      "artist": "Shin-ichi Yoshida",
+      "rarity": "Rare Holo",
+      "flavorText": "It flies so silently through the dark on its four wings that it may not be noticed even when nearby.",
+      "nationalPokedexNumbers": [
+        169
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo3/4.png",
+        "large": "https://images.pokemontcg.io/neo3/4_hires.png"
+      }
+    },
+    {
+      "id": "neo3-5",
+      "idSerie": "neo3",
+      "items": [
+        "sm10-171",
+        "sm10-232",
+        "ex6-91"
+      ],
+      "name": "Delibird",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "34",
+      "hp": "60",
+      "types": [
+        "Colorless"
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "5",
+      "artist": "Tomokazu Komiya",
+      "rarity": "Rare Holo",
+      "flavorText": "It carries food all day long. There are tales about lost people who were saved by the food it had.",
+      "nationalPokedexNumbers": [
+        225
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo3/5.png",
+        "large": "https://images.pokemontcg.io/neo3/5_hires.png"
+      }
+    },
+    {
+      "id": "neo3-6",
+      "idSerie": "neo3",
+      "items": [
+        "sm10-232"
+      ],
+      "name": "Entei",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "38",
+      "hp": "80",
+      "types": [
+        "Fire"
+      ],
+      "abilities": [
+        {
+          "name": "Howl",
+          "text": "When you play Entei from your hand, you may discard the top 5 cards of your deck. (If you have fewer cards in your deck than that, discard all of them.) If any of those are Fire Energy cards, attach them to any of your Fire Pokémon of your choice. Using this power ends your turn.",
+          "type": "Pokémon Power"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "6",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare Holo",
+      "flavorText": "Volcanoes erupt when it barks. Unable to restrain its extreme power, it races headlong around the land.",
+      "nationalPokedexNumbers": [
+        244
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo3/6.png",
+        "large": "https://images.pokemontcg.io/neo3/6_hires.png"
+      }
+    },
+    {
+      "id": "neo3-7",
+      "idSerie": "neo3",
+      "items": [
+        "sm10-232"
+      ],
+      "name": "Ho-oh",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "45",
+      "hp": "90",
+      "types": [
+        "Fire"
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "7",
+      "artist": "Kimiya Masago",
+      "rarity": "Rare Holo",
+      "flavorText": "Legends claim this Pokémon flies the world's skies continuously on its magnificent seven colored wings.",
+      "nationalPokedexNumbers": [
+        250
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo3/7.png",
+        "large": "https://images.pokemontcg.io/neo3/7_hires.png"
+      }
+    },
+    {
+      "id": "neo3-59",
+      "idSerie": "neo3",
+      "items": [
+        "sm10-171",
+        "sm10-232"
+      ],
+      "name": "Zubat",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "13",
+      "hp": "40",
+      "types": [
+        "Grass"
+      ],
+      "evolvesTo": [
+        "neo3-29"
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "number": "59",
+      "artist": "Yukiko Baba",
+      "rarity": "Common",
+      "flavorText": "While flying, it constantly emits ultrasonic waves from its mouth to check its surroundings.",
+      "nationalPokedexNumbers": [
+        41
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo3/59.png",
+        "large": "https://images.pokemontcg.io/neo3/59_hires.png"
+      }
+    },
+    {
+      "id": "neo3-29",
+      "idSerie": "neo3",
+      "items": [
+        "sm10-171",
+        "sm10-232"
+      ],
+      "name": "Golbat",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "level": "27",
+      "hp": "60",
+      "types": [
+        "Grass"
+      ],
+      "evolvesFrom": "Zubat",
+      "evolvesTo": [
+        "neo3-4"
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "number": "29",
+      "artist": "Masako Yamashita",
+      "rarity": "Uncommon",
+      "flavorText": "It can drink more than 10 ounces of blood at once. If it has too much, it gets heavy and flies clumsily.",
+      "nationalPokedexNumbers": [
+        42
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo3/29.png",
+        "large": "https://images.pokemontcg.io/neo3/29_hires.png"
+      }
+    },
+    {
+      "id": "neo3-28",
+      "idSerie": "neo3",
+      "items": [
+        "sm10-171",
+        "sm10-232"
+      ],
+      "name": "Flaaffy",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "32",
+      "hp": "70",
+      "types": [
+        "Lightning"
+      ],
+      "evolvesFrom": "Mareep",
+      "evolvesTo": [
+        "neo3-1"
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "28",
+      "artist": "Toshinao Aoki",
+      "rarity": "Uncommon",
+      "flavorText": "Its fluffy fleece easily stores electricity. Its rubbery hide keeps it from being electrocuted.",
+      "nationalPokedexNumbers": [
+        180
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo3/28.png",
+        "large": "https://images.pokemontcg.io/neo3/28_hires.png"
+      }
+    },
+    {
+      "id": "neo3-50",
+      "idSerie": "neo3",
+      "items": [
+        "sm10-171",
+        "sm10-232"
+      ],
+      "name": "Remoraid",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "15",
+      "hp": "40",
+      "types": [
+        "Water"
+      ],
+      "evolvesTo": [
+        "neo3-34"
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "number": "50",
+      "artist": "Miki Tanaka",
+      "rarity": "Common",
+      "flavorText": "It has superb accuracy. The water it shoots out can strike even moving prey from more than 300 feet.",
+      "nationalPokedexNumbers": [
+        223
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo3/50.png",
+        "large": "https://images.pokemontcg.io/neo3/50_hires.png"
+      }
+    },
+    {
+      "id": "neo3-34",
+      "idSerie": "neo3",
+      "items": [
+        "sm10-171",
+        "sm10-232"
+      ],
+      "name": "Octillery",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "level": "43",
+      "hp": "80",
+      "types": [
+        "Water"
+      ],
+      "evolvesFrom": "Remoraid",
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "34",
+      "artist": "Tomokazu Komiya",
+      "rarity": "Uncommon",
+      "flavorText": "It traps enemies with its suction cupped tentacles then smashes them with its rockhard head.",
+      "nationalPokedexNumbers": [
+        224
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo3/34.png",
+        "large": "https://images.pokemontcg.io/neo3/34_hires.png"
+      }
+    },
+    {
+      "id": "neo3-13",
+      "idSerie": "neo3",
+      "items": [
+        "sm10-171",
+        "sm10-232"
+      ],
+      "name": "Raikou",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "40",
+      "hp": "80",
+      "types": [
+        "Lightning"
+      ],
+      "abilities": [
+        {
+          "name": "Lightning Burst",
+          "text": "Whenever you attach a Lightning Energy card from your hand to Raikou, if your opponent has any Benched Pokémon, he or she chooses 1 of them and switches it with the Defending Pokémon. This power stops working while Raikou is Asleep, Confused, or Paralyzed.",
+          "type": "Pokémon Power"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "13",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare Holo",
+      "flavorText": "The rain clouds it carries let it fire thunderbolts at will. They say that it descended with lightning.",
+      "nationalPokedexNumbers": [
+        243
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo3/13.png",
+        "large": "https://images.pokemontcg.io/neo3/13_hires.png"
+      }
+    },
+    {
+      "id": "neo3-14",
+      "idSerie": "neo3",
+      "items": [
+        "sm10-171",
+        "sm10-232"
+      ],
+      "name": "Suicune",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "33",
+      "hp": "70",
+      "types": [
+        "Water"
+      ],
+      "abilities": [
+        {
+          "name": "Crystal Body",
+          "text": "Prevent all effects of your opponent's attacks, other than damage, done to Suicune. This power stops working while Suicune is Asleep, Confused, or Paralyzed.",
+          "type": "Pokémon Power"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "14",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare Holo",
+      "flavorText": "Said to be the reincarnation of north winds, it can instantly purify filthy, murky water.",
+      "nationalPokedexNumbers": [
+        245
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo3/14.png",
+        "large": "https://images.pokemontcg.io/neo3/14_hires.png"
+      }
+    },
+    {
+      "id": "neo3-20",
+      "idSerie": "neo3",
+      "items": [
+        "sm10-171",
+        "sm10-232"
+      ],
+      "name": "Lugia",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "43",
+      "hp": "90",
+      "types": [
+        "Psychic"
+      ],
+      "weaknesses": [
+        {
+          "type": "Psychic",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "20",
+      "artist": "Aya Kusube",
+      "rarity": "Rare",
+      "flavorText": "It is said to be the guardian of the seas. It is rumored to have been seen on the night of a storm.",
+      "nationalPokedexNumbers": [
+        249
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/neo3/20.png",
+        "large": "https://images.pokemontcg.io/neo3/20_hires.png"
+      }
+    },
+    {
+      "id": "ecard3-75",
+      "idSerie": "ecard3",
+      "items": [
+        "sm10-171",
+        "sm10-232"
+      ],
+      "level": 20,
+      "name": "Magikarp",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "30",
+      "types": [
+        "Water"
+      ],
+      "evolvesTo": [
+        "ecard3-11"
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "75",
+      "artist": "Keiko Fukuyama",
+      "rarity": "Common",
+      "nationalPokedexNumbers": [
+        129
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/ecard3/75.png",
+        "large": "https://images.pokemontcg.io/ecard3/75_hires.png"
+      }
+    },
+    {
+      "id": "ecard3-11",
+      "idSerie": "ecard3",
+      "items": [
+        "sm10-171",
+        "sm10-232"
+      ],
+      "level": 45,
+      "name": "Gyarados",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "90",
+      "types": [
+        "Water"
+      ],
+      "evolvesFrom": "Magikarp",
+      "abilities": [
+        {
+          "name": "Flame Vapor",
+          "text": "When you play Gyarados from your hand to evolve your Active Pokémon, you may flip 2 coins. For each heads, discard an Energy card attached to the Defending Pokémon.",
+          "type": "Poké-Power"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "11",
+      "artist": "Kimiya Masago",
+      "rarity": "Rare",
+      "nationalPokedexNumbers": [
+        130
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/ecard3/11.png",
+        "large": "https://images.pokemontcg.io/ecard3/11_hires.png"
+      }
+    }
+  ],
+  "series": [
+    {
+      "id": "neo3",
+      "name": "Neo Revelation",
+      "series": "Neo",
+      "printedTotal": 64,
+      "total": 66,
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "ptcgoCode": "N3",
+      "releaseDate": "2001/09/21",
+      "updatedAt": "2020/08/14 09:35:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/neo3/symbol.png",
+        "logo": "https://images.pokemontcg.io/neo3/logo.png"
+      }
+    },
+    {
+      "id": "neo1",
+      "name": "Neo Genesis",
+      "series": "Neo",
+      "printedTotal": 111,
+      "total": 111,
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "ptcgoCode": "N1",
+      "releaseDate": "2000/12/16",
+      "updatedAt": "2022/10/10 15:12:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/neo1/symbol.png",
+        "logo": "https://images.pokemontcg.io/neo1/logo.png"
+      }
+    },
+    {
+      "id": "ecard3",
+      "name": "Skyridge",
+      "series": "E-Card",
+      "printedTotal": 144,
+      "total": 182,
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "ptcgoCode": "SK",
+      "releaseDate": "2003/05/12",
+      "updatedAt": "2020/08/14 09:35:00",
+      "images": {
+        "symbol": "https://images.pokemontcg.io/ecard3/symbol.png",
+        "logo": "https://images.pokemontcg.io/ecard3/logo.png"
+      }
+    }
+  ],
+  "carteEquipement": [
+    {
+      "id": "sm10-164",
+      "name": "Beast Bringer",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "Attach a Pokémon Tool to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it.",
+        "If you have exactly 6 Prize cards remaining, and if your opponent's Active Pokémon-GX or Pokémon-EX is Knocked Out by damage from an attack of the Ultra Beast this card is attached to, take 1 more Prize card.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "number": "164",
+      "artist": "Ayaka Yoshida",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm10/164.png",
+        "large": "https://images.pokemontcg.io/sm10/164_hires.png"
+      }
+    },
+    {
+      "id": "sm10-171",
+      "name": "Fairy Charm Ability",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "Attach a Pokémon Tool to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it.",
+        "Prevent all damage done to the Fairy Pokémon this card is attached to by attacks from your opponent's Pokémon-GX and Pokémon-EX that have Abilities.",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "number": "171",
+      "artist": "Toyste Beach",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm10/171.png",
+        "large": "https://images.pokemontcg.io/sm10/171_hires.png"
+      }
+    },
+    {
+      "id": "sm10-232",
+      "name": "Metal Core Barrier",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "Attach a Pokémon Tool to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it.",
+        "If this card is attached to 1 of your Pokémon, discard it at the end of your opponent's turn.",
+        "The Metal Pokémon this card is attached to takes 70 less damage from your opponent's attacks (after applying Weakness and Resistance).",
+        "You may play as many Item cards as you like during your turn (before your attack)."
+      ],
+      "number": "232",
+      "artist": "Studio Bora Inc.",
+      "rarity": "Rare Secret",
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm10/232.png",
+        "large": "https://images.pokemontcg.io/sm10/232_hires.png"
+      }
+    },
+    {
+      "id": "ecard3-139",
+      "name": "Star Piece",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "Attach Star Piece to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it. If that Pokémon is Knocked Out, discard this card.",
+        "At any time between turns, if the Pokémon this card is attached to is Benched and has 2 or more damage counters on it, search your deck for an Evolution card that Pokémon evolves into and put it on top of that Pokémon. (This counts as evolving that Pokémon.) Shuffle your deck afterward. Then, discard Star Piece."
+      ],
+      "number": "139",
+      "artist": "Jungo Suzuki",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/ecard3/139.png",
+        "large": "https://images.pokemontcg.io/ecard3/139_hires.png"
+      }
+    },
+    {
+      "id": "ex6-91",
+      "name": "EXP.ALL",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "Attach EXP. ALL to 1 of your Pokémon (excluding Pokémon-ex and Pokémon that has an owner in its name) that doesn't already have a Pokémon Tool attached to it. If that Pokémon is Knocked Out, discard this card.",
+        "During your opponent's turn, if 1 of your Active Pokémon is Knocked Out by your opponent's attack, you may take 1 basic Energy card attached to that Knocked Out Pokémon and attach it to the Pokémon with EXP.ALL attached to it. If you do, discard EXP.ALL."
+      ],
+      "number": "91",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/ex6/91.png",
+        "large": "https://images.pokemontcg.io/ex6/91_hires.png"
+      }
+    },
+    {
+      "id": "ex4-74",
+      "name": "Strength Charm",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "Attach Strength Charm to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it. If that Pokémon is Knocked Out, discard this card.",
+        "Whenever an attack from the Pokémon that Strength Charm is attached to does damage to the Active Pokémon (after applying Weakness and Resistance), the attack does 10 more damage. At the end of the turn in which this happens, discard Strength Charm."
+      ],
+      "number": "74",
+      "artist": "Keiji Kinebuchi",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/ex4/74.png",
+        "large": "https://images.pokemontcg.io/ex4/74_hires.png"
+      }
+    }
+  ]
+}

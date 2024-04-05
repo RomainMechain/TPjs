@@ -1,0 +1,38 @@
+#logo {
+    max-width: 35rem;
+    max-height: 18rem;
+    margin-top: 3rem;
+    object-fit: contain;
+}
+
+.flex {
+    display: flex;
+    margin-top: 2rem;
+}
+
+span {
+    text-decoration: underline;
+}
+
+#info {
+    margin-left: 3rem;
+}
+
+#info p {
+    font-size: 2rem;
+}
+
+#info h1 {
+    font-size: 5rem;
+}
+
+#symbole {
+    margin-left: 1rem;
+    max-width: 6rem;
+    max-height: 4rem;
+    object-fit: contain;
+}
+
+.uneCarte {
+    height: 3px;
+}
